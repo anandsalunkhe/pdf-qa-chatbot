@@ -1,0 +1,18 @@
+# Runtime dependencies for pdf-chatbot
+# Install with:  pip install -r requirements.txt
+
+# PDF parsing (pure-Python, no native dependencies)
+pypdf>=4.0.0
+
+# OpenAI SDK — used with Gemini's OpenAI-compatible endpoint.
+# No google-generativeai needed; the standard openai package handles both
+# embeddings and chat completions via a base_url swap.
+openai>=1.30.0
+
+# Numerical operations (cosine similarity, matrix math)
+numpy>=1.26.0
+
+# Loads GOOGLE_API_KEY (and any other secrets) from a .env file
+python-dotenv>=1.0.0
+
+streamlit>=1.35.0
